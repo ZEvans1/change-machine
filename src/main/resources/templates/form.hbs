@@ -1,0 +1,20 @@
+{{#partial "title" }}
+Create a Custom Greeting!
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+<h1>Coin Machine</h1>
+<h3>Enter a cash value, and we will convert that shit to change.</h3>
+<form action='/change_machine'>
+    <div class="form-group">
+        <label for="input">Your cash: </label>
+        <input id="input" name="input" class="form-control" type="text">
+    </div>
+    <button type="submit" class="btn">Go!</button>
+</form>
+<!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}
